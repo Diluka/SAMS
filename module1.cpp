@@ -6,7 +6,7 @@
 using namespace std;
 
 void initialize(){
-   extern storage sdata;//åœ¨mainä¸­å…¨å±€å®šä¹‰ 
+   extern storage sdata;//ÔÚmainÖÐÈ«¾Ö¶¨Òå 
 	 load();
 	 //TODO
 	 }
@@ -16,18 +16,18 @@ void welcome(){
 	 time_t t=time(0);
 	 char time_s[64];
 	 strftime(time_s,sizeof(time_s),"%a %b %d %H:%M:%S %Y",localtime(&t));
-	 cout<<" ç‰ˆæƒæ‰€æœ‰ï¼šDilukaï¼ŒKevin"<<endl;
+	 cout<<" °æÈ¨ËùÓÐ£ºDiluka£¬Kevin"<<endl;
 	 cout<<endl;
-	 cout<<" å­¦ç”Ÿæˆç»©ç®¡ç†ç³»ç»Ÿ"<<endl;
-	 cout<<" æ˜¾ç¤ºç³»ç»Ÿæ—¶é—´å’Œæ—¥æœŸï¼š"<<time_s<<endl;
+	 cout<<" Ñ§Éú³É¼¨¹ÜÀíÏµÍ³"<<endl;
+	 cout<<" ÏÔÊ¾ÏµÍ³Ê±¼äºÍÈÕÆÚ£º"<<time_s<<endl;
 	 cout<<endl;
-	 cout<<"1.è¾“å…¥æ·»åŠ å­¦ç”Ÿèµ„æ–™"<<endl;
-	 cout<<"2.æ˜¾ç¤ºå­¦ç”Ÿèµ„æ–™"<<endl;
-	 cout<<"3.æŒ‰å­¦å·æŸ¥æ‰¾"<<endl;
-	 cout<<"4.åˆ é™¤è®°å½•"<<endl;
-	 cout<<"5.æŒ‰æ€»åˆ†è¿›è¡ŒæŽ’åº"<<endl;
-	 cout<<"6.é€€å‡º"<<endl;
-	 cout<<"è¯·é€‰æ‹©æ“ä½œ(1-6)"<<endl;
+	 cout<<"1.ÊäÈëÌí¼ÓÑ§Éú×ÊÁÏ"<<endl;
+	 cout<<"2.ÏÔÊ¾Ñ§Éú×ÊÁÏ"<<endl;
+	 cout<<"3.°´Ñ§ºÅ²éÕÒ"<<endl;
+	 cout<<"4.É¾³ý¼ÇÂ¼"<<endl;
+	 cout<<"5.°´×Ü·Ö½øÐÐÅÅÐò"<<endl;
+	 cout<<"6.ÍË³ö"<<endl;
+	 cout<<"ÇëÑ¡Ôñ²Ù×÷(1-6)"<<endl;
 	 }
 
 char first_face(){
