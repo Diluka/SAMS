@@ -8,7 +8,8 @@ using namespace std;
 void initialize(){
    extern storage sdata;//在main中全局定义 
 	 load();
-	 //TODO
+	 /* TODO (#1#): 未完成 */
+	 
 	 }
 	 
 void welcome(){
