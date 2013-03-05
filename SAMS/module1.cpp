@@ -6,7 +6,7 @@
 using namespace std;
 
 void initialize(){
-   extern storage sdata;//在main中全局定义 
+   extern storage_list sdata;//在main中全局定义 
 	 load();
 	 /* TODO (#1#): 未完成 */
 	 

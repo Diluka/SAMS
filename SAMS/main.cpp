@@ -3,7 +3,7 @@
 #include"module1.h"
 #include"storage.h"
 
-storage sdata;
+storage_list sdata;
 
 using namespace std;
 
