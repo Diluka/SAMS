@@ -1,4 +1,4 @@
-#ifndef STORAGE_H
+﻿#ifndef STORAGE_H
 #define STORAGE_H
 typedef struct _storage{
      int sid;
