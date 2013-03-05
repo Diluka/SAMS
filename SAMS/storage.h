@@ -1,13 +1,14 @@
 ﻿#ifndef STORAGE_H
 #define STORAGE_H
 
+#include<string>
 #include<map>
 using namespace std;
 
 typedef struct _student{
 		int sid;
-	   char* name;
-	   char* addr;
+	   string name;
+	   string addr;
 	   int score_math,score_eng,score_com;
 	   }student;
 	   
