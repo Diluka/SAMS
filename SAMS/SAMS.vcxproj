@@ -77,11 +77,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="module1.h" />
+    <ClInclude Include="module2.h" />
     <ClInclude Include="storage.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="module1.cpp" />
+    <ClCompile Include="module2.cpp" />
     <ClCompile Include="storage.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

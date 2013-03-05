@@ -2,6 +2,7 @@
 #include<iostream>
 #include<stdlib.h>
 #include"storage.h"
+#include"module2.h"
 
 using namespace std;
 
@@ -39,9 +40,9 @@ char first_face(){
 	 while(1){
 		 switch(ch){
 		 			case'1':break;
-		 			case'2':break;
-		 			case'3':break;
-		 			case'4':break;
+		 			case'2':in_storage();break;
+		 			case'3':select_ele();break;
+		 			case'4':out_storage();break;
 		 			case'5':break;
 		 			case'6':exit(0);
 		 			default:welcome();
