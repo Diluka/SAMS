@@ -2,7 +2,7 @@
 #define MODULE2_H
 void addRecord();
 void dspRecord();
-void searchByEle()
+void searchBySid()
 void delRecord();
 void orderByScore();
 #endif

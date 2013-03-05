@@ -1,6 +1,6 @@
 #include<iostream>
 void addRecord();
 void dspRecord();
-void searchByEle()
+void searchBySid()
 void delRecord();
 void orderByScore();

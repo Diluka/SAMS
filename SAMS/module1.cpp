@@ -41,7 +41,7 @@ char first_face(){
 		 switch(ch){
 		 			case'1':addRecord();break;
 		 			case'2':dspRecord();break;
-		 			case'3':searchByEle();break;
+		 			case'3':searchBySid();break;
 		 			case'4':delRecord();break;
 		 			case'5':orderByScore();break;
 		 			case'6':exit(0);
