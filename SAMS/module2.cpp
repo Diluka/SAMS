@@ -1,6 +1,6 @@
 #include<iostream>
-void add_storage();
-void in_storage();
-void out_storage();
-void select_ele();
-void order_score();
+void addRecord();
+void dspRecord();
+void searchByEle()
+void delRecord();
+void orderByScore();

@@ -39,11 +39,11 @@ char first_face(){
 	 char ch=getchar();
 	 while(1){
 		 switch(ch){
-		 			case'1':add_storage();break;
-		 			case'2':in_storage();break;
-		 			case'3':select_ele();break;
-		 			case'4':out_storage();break;
-		 			case'5':order_score();break;
+		 			case'1':addRecord();break;
+		 			case'2':dspRecord();break;
+		 			case'3':searchByEle();break;
+		 			case'4':delRecord();break;
+		 			case'5':orderByScore();break;
 		 			case'6':exit(0);
 		 			default:welcome();
 					}
