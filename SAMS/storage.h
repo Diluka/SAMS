@@ -2,6 +2,7 @@
 #define STORAGE_H
 
 #include<list>
+using namespace std;
 
 typedef struct _storage{
      int sid;
