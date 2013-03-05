@@ -8,14 +8,14 @@ typedef struct _student{
 		int sid;
 	   char* name;
 	   char* addr;
-	   int score1,score2,score3;
+	   int score_math,score_eng,score_com;
 	   }student;
 	   
 typedef int student_id;
 typedef map<student_id,student> student_map;
 
-void load();
-void save();
+bool load();
+bool save();
 
 
 #endif

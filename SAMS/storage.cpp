@@ -1,13 +1,13 @@
 ﻿#include<iostream>
 #include"storage.h"
-void load(){
+bool load(){
    extern student_map sdata;
    /* TODO (#1#): 未实现 */
-   
+   return true;
 	 }
 	 
-void save(){
+bool save(){
 	extern student_map sdata;
 	 /* TODO (#1#): 未实现 */
-	 
+	 return true;
 	 }

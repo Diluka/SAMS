@@ -1,8 +1,8 @@
-#ifndef MODULE2_H
-#define MODULE2_H
+#ifndef FUNCTIONAL_H
+#define FUNCTIONAL_H
 void addRecord();
 void dspRecord();
-void searchBySid()
+void searchBySid();
 void delRecord();
 void orderByScore();
 #endif
