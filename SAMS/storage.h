@@ -1,17 +1,17 @@
 ﻿#ifndef STORAGE_H
 #define STORAGE_H
 
-#include<list>
+#include<map>
 using namespace std;
 
 typedef struct _storage{
-     int sid;
+		int sid;
 	   char* name;
 	   char* addr;
 	   int score1,score2,score3;
 	   }storage;
 	   
-typedef list<storage> storage_list;
+typedef map<int,storage> storage_map;
 
 void load();
 void save();

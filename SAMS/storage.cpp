@@ -1,7 +1,7 @@
 ﻿#include<iostream>
 #include"storage.h"
 void load(){
-   extern storage_list sdata;
+   extern storage_map sdata;
    /* TODO (#1#): 未实现 */
    
 	 }
