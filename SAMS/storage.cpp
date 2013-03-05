@@ -1,12 +1,13 @@
 ﻿#include<iostream>
 #include"storage.h"
 void load(){
-   extern storage_map sdata;
+   extern student_map sdata;
    /* TODO (#1#): 未实现 */
    
 	 }
 	 
 void save(){
+	extern student_map sdata;
 	 /* TODO (#1#): 未实现 */
 	 
 	 }

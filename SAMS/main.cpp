@@ -3,7 +3,7 @@
 #include"module1.h"
 #include"storage.h"
 
-storage_map sdata;
+student_map sdata;
 
 using namespace std;
 

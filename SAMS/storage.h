@@ -4,14 +4,15 @@
 #include<map>
 using namespace std;
 
-typedef struct _storage{
+typedef struct _student{
 		int sid;
 	   char* name;
 	   char* addr;
 	   int score1,score2,score3;
-	   }storage;
+	   }student;
 	   
-typedef map<int,storage> storage_map;
+typedef int student_id;
+typedef map<student_id,student> student_map;
 
 void load();
 void save();
