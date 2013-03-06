@@ -9,7 +9,7 @@ void addRecord(){
 	do
 	{
 		cout<<"请依次输入学生的姓名，学号，地址，高数，英语，计算机："<<endl;
-		cin>>temp_s.name>>temp_s.sid>>temp_s.addr>>temp_s.score_math>>temp_s.score_eng>>temp_s.score_math;
+		cin>>temp_s.name>>temp_s.sid>>temp_s.addr>>temp_s.score_math>>temp_s.score_eng>>temp_s.score_com;
 		sdata[temp_s.sid]=temp_s;
 		getchar();//吃掉回车
 		do
