@@ -1,4 +1,4 @@
-#include <cstdlib>
+﻿#include <cstdlib>
 #include <iostream>
 #include<time.h>
 #include"functional.h"

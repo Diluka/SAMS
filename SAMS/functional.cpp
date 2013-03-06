@@ -1,4 +1,4 @@
-#include<iostream>
+﻿#include<iostream>
 #include"storage.h"
 #include"functional.h"
 
