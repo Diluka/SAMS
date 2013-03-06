@@ -109,10 +109,10 @@ void orderByScore(){
 		count++;
 	}
 	qs(sa,ida,0,count-1);
-	cout<<"姓名\t学号\t地址\t\t高数\t英语\t计算机\t"<<endl;
-	for(int i=0;i<count;i++){
+	cout<<"姓名\t学号\t地址\t\t高数\t英语\t计算机\t总分"<<endl;
+	for(int i=count-1;i>=0;i--){
 		//cout<<"ida: "<<ida[i]<<" sa: "<<sa[i]<<endl;
-		cout<<sdata[ida[i]].name<<'\t'<<ida[i]<<'\t'<<sdata[ida[i]].addr<<"\t\t"<<sdata[ida[i]].score_math<<'\t'<<sdata[ida[i]].score_eng<<'\t'<<sdata[ida[i]].score_com<<endl;
+		cout<<sdata[ida[i]].name<<'\t'<<ida[i]<<'\t'<<sdata[ida[i]].addr<<"\t\t"<<sdata[ida[i]].score_math<<'\t'<<sdata[ida[i]].score_eng<<'\t'<<sdata[ida[i]].score_com<<'\t'<<sa[i]<<endl;
 	}
 	getchar();
 }
