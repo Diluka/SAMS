@@ -9,9 +9,8 @@ student_map sdata;//全局变量存储学生成绩表
 using namespace std;
 
 void initialize(){ 
-	 if(!load()){//读取文件
-		 //读取失败需要进行的处理
-		 //TODO
+	 if(!load()){
+		 cout<<"不能打开文件，读取失败！";
 	 }
 	 
 	 }
