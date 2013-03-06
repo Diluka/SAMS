@@ -1,8 +1,42 @@
-﻿#include<iostream>
+#include<iostream>
 #include"storage.h"
+#include"functional.h"
 
 using namespace std;
 extern student_map sdata;
+
+void swap(int *pLeft,int *pRight)
+{
+int temp;
+temp = *pLeft;
+*pLeft= *pRight;
+*pRight = temp;
+}
+void qs(int* a,int* b,int begin,int end)
+{
+int compare=a[begin], left =begin,right = end;
+if(left >right)
+return;
+while (left <right)
+{
+while ((left <right) && a[right]>=compare)
+right--;
+//a[left] = a[right];
+swap(&a[left],&a[right]);
+swap(&b[left],&b[right]);
+while ((left <right) &&(a[left] <compare))
+left++;
+//a[right] = a[left];
+swap(&a[right],&a[left]);
+swap(&b[left],&b[right]);
+}
+a[right] = a[left];
+qs(a,b,begin,right-1);
+qs(a,b,right+1,end);
+}
+
+
+
 void addRecord(){
 	student temp_s;
 	char ch;
@@ -66,6 +100,19 @@ void delRecord(){
 	}
 }
 void orderByScore(){
-	//TODO 如何排序还是个大问题
-	cout<<"序号\t姓名\t学号\t地址\t\t高数\t英语\t计算机\t"<<endl;
+	student_id ida[MAX];
+	int sa[MAX];
+	int count=0;
+	for(student_map::iterator iter=sdata.begin();iter!=sdata.end();iter++){
+		ida[count]=(*iter).first;
+		sa[count]=(*iter).second.score_math+(*iter).second.score_eng+(*iter).second.score_com;
+		count++;
+	}
+	qs(sa,ida,0,count-1);
+	cout<<"姓名\t学号\t地址\t\t高数\t英语\t计算机\t"<<endl;
+	for(int i=0;i<count;i++){
+		//cout<<"ida: "<<ida[i]<<" sa: "<<sa[i]<<endl;
+		cout<<sdata[ida[i]].name<<'\t'<<ida[i]<<'\t'<<sdata[ida[i]].addr<<"\t\t"<<sdata[ida[i]].score_math<<'\t'<<sdata[ida[i]].score_eng<<'\t'<<sdata[ida[i]].score_com<<endl;
+	}
+	getchar();
 }
