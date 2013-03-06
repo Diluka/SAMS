@@ -11,7 +11,9 @@ typedef struct _student{
 		student_id sid;
 	   string name;
 	   string addr;
-	   int score_math,score_eng,score_com;
+	   int score_math;
+	   int score_eng;
+	   int score_com;
 	   }student;
 	   
 
