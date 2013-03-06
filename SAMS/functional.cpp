@@ -91,11 +91,12 @@ void delRecord(){
 		cout<<"姓名\t学号\t地址\t\t高数\t英语\t计算机\t"<<endl;
 		cout<<(*iter).second.name<<'\t'<<(*iter).first<<'\t'<<(*iter).second.addr<<"\t\t"<<(*iter).second.score_math<<'\t'<<(*iter).second.score_eng<<'\t'<<(*iter).second.score_com<<endl;
 		cout<<"您确实要删除该学生的记录吗？(y/n)";
+		getchar();//吃掉回车
 		char ch=getchar();
 		if(ch=='y'||ch=='Y'){
 			sdata.erase(iter);
 			cout<<"该记录已删除！"<<endl;
-			getchar();
+			system("pause");
 		}
 	}
 }
