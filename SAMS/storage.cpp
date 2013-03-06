@@ -17,7 +17,7 @@ bool save(){
 	 if(!wfile)
 		 return false; 
 	for(student_map::iterator iter=sdata.begin();iter!=sdata.end();iter++){
-		wfile<<(*iter).second.name<<' '<<(*iter).first<<' '<<(*iter).second.addr<<" "<<(*iter).second.score_math<<' '<<(*iter).second.score_eng<<' '<<(*iter).second.score_com<<endl;
+		wfile<<(*iter).second.name<<' '<<(*iter).first<<' '<<(*iter).second.addr<<' '<<(*iter).second.score_math<<' '<<(*iter).second.score_eng<<' '<<(*iter).second.score_com<<endl;
 	}
 	wfile.close();
 	 return true;
