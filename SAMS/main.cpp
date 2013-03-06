@@ -1,4 +1,4 @@
-﻿#include <cstdlib>
+#include <cstdlib>
 #include <iostream>
 #include<time.h>
 #include"functional.h"
@@ -49,10 +49,10 @@ int main(int argc, char *argv[])
 		 			case'3':searchBySid();break;
 		 			case'4':delRecord();break;
 		 			case'5':orderByScore();break;
-		 			case'6':if(!save()){
-						//退出时保存，失败之后要进行的处理
-						//TODO
-							}
+		 			case'6':if(!save())
+								cout<<"不能打开文件，保存失败！";
+							else
+								cout<<"保存成功！";
 							cout<<"谢谢您的使用！"<<endl;
 							system("pause");
 							break;
