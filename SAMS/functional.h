@@ -5,5 +5,4 @@ void dspRecord();
 void searchBySid();
 void delRecord();
 void orderByScore();
-#define MAX 1024
 #endif
