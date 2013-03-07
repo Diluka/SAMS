@@ -10,7 +10,9 @@ using namespace std;
 
 void initialize(){ 
 	 if(!load()){
-		 cout<<"不能打开文件，读取失败！";
+		 cout<<"不能打开文件，读取失败！"<<endl;
+	 }else{
+	 	cout<<"成功加载数据。"<<endl;
 	 }
 	 
 	 }
@@ -49,9 +51,13 @@ int main(int argc, char *argv[])
 		 			case'4':delRecord();break;
 		 			case'5':orderByScore();break;
 		 			case'6':if(!save())
-								cout<<"不能打开文件，保存失败！";
+								cout<<"不能打开文件，保存失败！"<<endl;
+								cout<<"请检查程序所在目录是否可写后重试。"<<endl;
+								system("pause");
+								welcome();
+								break;
 							else
-								cout<<"保存成功！";
+								cout<<"保存成功！"<<endl;;
 							cout<<"谢谢您的使用！"<<endl;
 							system("pause");
 							break;
