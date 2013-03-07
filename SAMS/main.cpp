@@ -11,6 +11,7 @@ using namespace std;
 void initialize(){ 
 	 if(!load()){
 		 cout<<"不能打开文件，读取失败！"<<endl;
+		 system("pause");
 	 }else{
 	 	cout<<"成功加载数据。"<<endl;
 	 }
