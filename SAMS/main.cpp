@@ -4,7 +4,6 @@
 #include"functional.h"
 #include"storage.h"
 
-student_map sdata;//全局变量存储学生成绩表
 
 using namespace std;
 

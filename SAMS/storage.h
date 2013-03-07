@@ -1,26 +1,37 @@
 ﻿#ifndef STORAGE_H
 #define STORAGE_H
 
-#include<string>
-#include<map>
+
 using namespace std;
 
-typedef int student_id;
+typedef struct STUDENT_INFO
+{
+	int sid;
+	char* name;
+	char* addr;
+	int score_math;
+	int score_eng;
+	int score_com;
+	int score_total;
+};
 
-typedef struct _student{
-		student_id sid;
-	   string name;
-	   string addr;
-	   int score_math;
-	   int score_eng;
-	   int score_com;
-	   }student;
-	   
+typedef struct STUDENT{
+	   struct STUDENT_INFO info;
+	   struct STUDENT *next,*prev;
+	   }STUDENT;
 
-typedef map<student_id,student> student_map;
+STUDENT student_list;
+STUDENT* student_head;
 
+void init();
 bool load();
 bool save();
+STUDENT* create(STUDENT_INFO &info);
+bool insert(register STUDENT **ps,STUDENT &s);
+void erase(STUDENT *ptr);
+STUDENT* search(STUDENT *head,int id);
+void freelist(STUDENT *head);
+void print(STUDENT *head);
 
 
 #endif
