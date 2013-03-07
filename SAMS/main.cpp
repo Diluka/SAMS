@@ -51,17 +51,18 @@ int main(int argc, char *argv[])
 		 			case'3':searchBySid();break;
 		 			case'4':delRecord();break;
 		 			case'5':orderByScore();break;
-		 			case'6':if(!save())
+		 			case'6':if(!save()){
 								cout<<"不能打开文件，保存失败！"<<endl;
 								cout<<"请检查程序所在目录是否可写后重试。"<<endl;
 								system("pause");
 								welcome();
 								break;
-							else
+							}else{
 								cout<<"保存成功！"<<endl;;
 							cout<<"谢谢您的使用！"<<endl;
 							system("pause");
 							break;
+							}
 		 			default:welcome();
 					}
 				}
