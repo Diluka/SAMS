@@ -1,5 +1,4 @@
-﻿#include <cstdlib>
-#include <iostream>
+﻿#include<iostream>
 #include<time.h>
 #include"functional.h"
 #include"storage.h"
@@ -38,8 +37,8 @@ void welcome(){
 
 int main(int argc, char *argv[])
 {
-   initialize();
-	 welcome();
+	initialize();
+	welcome();
 
 	 char ch=0;
 	 while(ch!='6'){

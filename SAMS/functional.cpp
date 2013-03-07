@@ -26,7 +26,6 @@ void addRecord(){
 
 }
 void dspRecord(){
-	int count=0;
 	cout<<"序号\t姓名\t学号\t地址\t高数\t英语\t计算机\t"<<endl;
 	sortBySID();
 	showData(true);
