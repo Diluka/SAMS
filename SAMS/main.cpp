@@ -8,7 +8,7 @@
 using namespace std;
 
 void initialize(){ 
-	 if(!load()){
+	 if(!loadData()){
 		 cout<<"不能打开文件，读取失败！"<<endl;
 		 system("pause");
 	 }else{
@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
 		 			case'3':searchBySid();break;
 		 			case'4':delRecord();break;
 		 			case'5':orderByScore();break;
-		 			case'6':if(!save()){
+		 			case'6':if(!saveData()){
 								cout<<"不能打开文件，保存失败！"<<endl;
 								cout<<"请检查程序所在目录是否可写后重试。"<<endl;
 								system("pause");
