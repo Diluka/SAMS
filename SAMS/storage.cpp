@@ -12,7 +12,7 @@ STUDENT* create(STUDENT_INFO &info){
 	}
 	else
 	{
-		//TODO Not Enough Memery!!
+		//TODO: Not Enough Memery!!
 	}
 }
 
@@ -35,7 +35,7 @@ bool insert(STUDENT **ps,STUDENT *s){
 
 void freelist(STUDENT *head){
 	if(head=NULL){
-		//TODO Empty!
+		// TODO: Empty!
 		return;
 	}
 
@@ -53,14 +53,14 @@ void freelist(STUDENT *head){
 
 void print(STUDENT *head){
 	if(head=NULL){
-		//TODO Empty!
+		// TODO: Empty!
 		return;
 	}
 
 	while (head->next!=NULL)
 	{
 		head=head->next;
-		//TODO print
+		// TODO: print
 	}
 }
 
@@ -82,4 +82,12 @@ STUDENT* search(STUDENT *head,int id){
 	}
 
 	return NULL;
+}
+
+bool load(){
+	// TODO: 
+}
+
+bool save(){
+	// TODO: 
 }
