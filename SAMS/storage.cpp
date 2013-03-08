@@ -245,7 +245,7 @@ bool saveData(){
 	ofstream ofile("data.bin",ios::binary);
 	if(ofile==NULL)return false;
 	ofile.write((char*)&last_student,sizeof(last_student));
-	ofile.write((char*)&students,sizeof(STUDENT)*(last_student+1));
+	ofile.write((char*)&students[1],sizeof(STUDENT)*(last_student));
 	ofile.close();
 	return true;
 }
@@ -254,7 +254,7 @@ bool loadData(){
 	ifstream ifile("data.bin",ios::binary);
 	if(ifile==NULL)return false;
 	ifile.read((char*)&last_student,sizeof(last_student));
-	ifile.read((char*)&students,sizeof(STUDENT)*(last_student+1));
+	ifile.read((char*)&students[1],sizeof(STUDENT)*(last_student));
 	ifile.close();
 	return true;
 }
