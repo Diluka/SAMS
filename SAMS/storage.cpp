@@ -244,8 +244,8 @@ void sortByAny(int flag){
 bool saveData(){
 	ofstream ofile("data.bin",ios::binary);
 	if(ofile==NULL)return false;
-	ofile.write((char*)&students,sizeof(students));
 	ofile.write((char*)&last_student,sizeof(last_student));
+	ofile.write((char*)&students,sizeof(STUDENT)*(last_student+1));
 	ofile.close();
 	return true;
 }
@@ -253,8 +253,8 @@ bool saveData(){
 bool loadData(){
 	ifstream ifile("data.bin",ios::binary);
 	if(ifile==NULL)return false;
-	ifile.read((char*)&students,sizeof(students));
 	ifile.read((char*)&last_student,sizeof(last_student));
+	ifile.read((char*)&students,sizeof(STUDENT)*(last_student+1));
 	ifile.close();
 	return true;
 }
